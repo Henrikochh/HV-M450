@@ -38,3 +38,35 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 | 4  | **Login mit ungültigen Anmeldedaten**                     | Fehlermeldung wird angezeigt, dass die Anmeldedaten falsch sind, und der Login wird verweigert.                                                    | Fehlermeldung wird angezeigt    | Erfolgreich | Authentifizierungsmechanismus fehlerhaft                |
 | 5  | **Kontaktformular absenden**                            | Bestätigungsmeldung wird angezeigt, dass die Anfrage erfolgreich übermittelt wurde, und eine Bestätigungs-E-Mail wird an den Benutzer gesendet. | Bestätigungsmeldung angezeigt und E-Mail erhalten | Erfolgreich | -                                                       |
 
+## Übung 3
+
+## Black-Box Testfälle (Benutzersicht)
+
+| **Test-ID** | **Testfallbeschreibung**                                                       | **Erwartetes Ergebnis**                                  |
+|-------------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| BB1         | Kontoerstellung mit gültigen Eingabewerten (Name, Währung, Startbetrag)         | Konto wird erstellt, und die Details werden korrekt angezeigt. |
+| BB2         | Einzahlung eines positiven Betrags auf ein Konto                                | Der Kontostand erhöht sich um den eingezahlten Betrag.   |
+| BB3         | Abhebung eines Betrags innerhalb des Kontostands                                | Der Kontostand verringert sich korrekt um den abgehobenen Betrag. |
+| BB4         | Abhebung eines Betrags, der den Kontostand übersteigt                           | Abhebung wird abgelehnt, und der Kontostand bleibt unverändert. |
+| BB5         | Abfrage des Kontostands eines bestehenden Kontos                                | Der aktuelle Kontostand wird korrekt angezeigt.         |
+| BB6         | Überweisung von einem Konto auf ein anderes mit gleicher Währung               | Beträge werden korrekt abgezogen und hinzugefügt.       |
+| BB7         | Überweisung von einem Konto auf ein anderes mit unterschiedlicher Währung       | Beträge werden korrekt umgerechnet und übertragen.      |
+| BB8         | Anzeige der Liste aller Konten                                                 | Alle Konten werden mit Namen, IDs und Währungen angezeigt. |
+| BB9         | Löschen eines Kontos                                                           | Konto wird aus der Liste entfernt.                      |
+| BB10        | Wechselkursabfrage für zwei gültige Währungen                                   | Korrekte Wechselkursinformationen werden angezeigt.     |
+| BB11        | Menüeingabe mit ungültigem Zeichen                                             | Fehlermeldung wird angezeigt, und das Menü wiederholt sich. |
+
+---
+
+## White-Box Testfälle (Code-spezifisch)
+
+| **Test-ID** | **Methode**                     | **Testfallbeschreibung**                                               | **Erwartetes Ergebnis**                                  |
+|-------------|---------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------|
+| WB1         | `Account.deposit()`             | Einzahlung eines positiven Betrags                                     | Betrag wird korrekt zum Kontostand hinzugefügt.         |
+| WB2         | `Account.withdraw()`            | Abhebung eines zulässigen Betrags                                      | Betrag wird abgezogen, Rückgabewert ist `true`.         |
+| WB3         | `Account.withdraw()`            | Abhebung eines unzulässigen Betrags (über Kontostand)                  | Rückgabewert ist `false`, Kontostand bleibt unverändert. |
+| WB4         | `Bank.getAccount()`             | Aufrufen eines bestehenden Kontos anhand der ID                        | Korrektes Konto wird zurückgegeben.                    |
+| WB5         | `Bank.printAccountDetails()`    | Anzeige der Details eines existierenden Kontos                         | Alle Kontoinformationen werden korrekt ausgegeben.      |
+| WB6         | `Bank.deleteAccount()`          | Löschen eines Kontos aus der Liste                                     | Konto wird aus der Liste entfernt.                     |
+| WB7         | `Counter.transferAmount()`      | Übertragung eines Betrags zwischen zwei Konten                         | Beträge werden korrekt angepasst, Währungen konvertiert. |
+| WB8         | `ExchangeRateOkhttp.getExchangeRate()` | Abruf des Wechselkurses mit gültigen Parametern                       | Rückgabewert enthält korrekten Wechselkurs.             |
