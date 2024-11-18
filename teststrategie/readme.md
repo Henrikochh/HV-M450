@@ -40,7 +40,7 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 
 ## Übung 3
 
-## Black-Box Testfälle (Benutzersicht)
+### Black-Box Testfälle (Benutzersicht)
 
 | **Test-ID** | **Testfallbeschreibung**                                                       | **Erwartetes Ergebnis**                                  |
 |-------------|---------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -58,7 +58,7 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 
 ---
 
-## White-Box Testfälle (Code-spezifisch)
+### White-Box Testfälle (Code-spezifisch)
 
 | **Test-ID** | **Methode**                     | **Testfallbeschreibung**                                               | **Erwartetes Ergebnis**                                  |
 |-------------|---------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------|
@@ -70,3 +70,14 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 | WB6         | `Bank.deleteAccount()`          | Löschen eines Kontos aus der Liste                                     | Konto wird aus der Liste entfernt.                     |
 | WB7         | `Counter.transferAmount()`      | Übertragung eines Betrags zwischen zwei Konten                         | Beträge werden korrekt angepasst, Währungen konvertiert. |
 | WB8         | `ExchangeRateOkhttp.getExchangeRate()` | Abruf des Wechselkurses mit gültigen Parametern                       | Rückgabewert enthält korrekten Wechselkurs.             |
+
+### Verbesserungsvorschläge
+
+1. **Validierung der Eingaben verbessern:**
+   - Mehr Regex checks bei Währungseingaben.
+
+2. **Enum für Währungen erweitern:**
+   - Für währungen ein Enum verwenden.
+
+3. **Klarheit der Menüs:**
+   - Mehr Hilfetexte und Bestätigungen für funktionen mit starken folgen z.b Acount löschen
