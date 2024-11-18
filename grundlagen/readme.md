@@ -1,5 +1,6 @@
 # Aufgaben
 Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/grundlagen/UEBUNGEN.md
+Notizen: https://docs.google.com/document/d/1n_1yi5gtLufgZqIPOjo2_unpKwOOj2O6AzQpZaJ-CPY/edit?usp=sharing
 
 ## Aufgabe 1
 
