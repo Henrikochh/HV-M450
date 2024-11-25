@@ -50,11 +50,7 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 | BB4         | Abhebung eines Betrags, der den Kontostand übersteigt                           | Abhebung wird abgelehnt, und der Kontostand bleibt unverändert. |
 | BB5         | Abfrage des Kontostands eines bestehenden Kontos                                | Der aktuelle Kontostand wird korrekt angezeigt.         |
 | BB6         | Überweisung von einem Konto auf ein anderes mit gleicher Währung               | Beträge werden korrekt abgezogen und hinzugefügt.       |
-| BB7         | Überweisung von einem Konto auf ein anderes mit unterschiedlicher Währung       | Beträge werden korrekt umgerechnet und übertragen.      |
-| BB8         | Anzeige der Liste aller Konten                                                 | Alle Konten werden mit Namen, IDs und Währungen angezeigt. |
-| BB9         | Löschen eines Kontos                                                           | Konto wird aus der Liste entfernt.                      |
-| BB10        | Wechselkursabfrage für zwei gültige Währungen                                   | Korrekte Wechselkursinformationen werden angezeigt.     |
-| BB11        | Menüeingabe mit ungültigem Zeichen                                             | Fehlermeldung wird angezeigt, und das Menü wiederholt sich. |
+| BB7         | Überweisung von einem Konto auf ein anderes mit unterschiedlicher Währung       | Beträge werden korrekt 
 
 ---
 
