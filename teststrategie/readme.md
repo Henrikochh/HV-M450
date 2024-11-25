@@ -26,7 +26,7 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 
 ## Übung 2
 
-**Webseite:** Annahme Webseite einer Autovermietung (z.B. www.example-autovermietung.ch)
+**Webseite:** Annahme Webseite einer Autovermietung (https://www.sixt.ch/)
 
 ### 5 Wichtigsten Testfälle für funktionale Black-Box Tests
 
