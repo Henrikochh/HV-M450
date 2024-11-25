@@ -67,9 +67,6 @@ Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/tests
 | WB3         | `Account.withdraw()`            | Abhebung eines unzulässigen Betrags (über Kontostand)                  | Rückgabewert ist `false`, Kontostand bleibt unverändert. |
 | WB4         | `Bank.getAccount()`             | Aufrufen eines bestehenden Kontos anhand der ID                        | Korrektes Konto wird zurückgegeben.                    |
 | WB5         | `Bank.printAccountDetails()`    | Anzeige der Details eines existierenden Kontos                         | Alle Kontoinformationen werden korrekt ausgegeben.      |
-| WB6         | `Bank.deleteAccount()`          | Löschen eines Kontos aus der Liste                                     | Konto wird aus der Liste entfernt.                     |
-| WB7         | `Counter.transferAmount()`      | Übertragung eines Betrags zwischen zwei Konten                         | Beträge werden korrekt angepasst, Währungen konvertiert. |
-| WB8         | `ExchangeRateOkhttp.getExchangeRate()` | Abruf des Wechselkurses mit gültigen Parametern                       | Rückgabewert enthält korrekten Wechselkurs.             |
 
 ### Verbesserungsvorschläge
 
