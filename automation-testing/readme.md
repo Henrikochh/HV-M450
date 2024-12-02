@@ -1,10 +1,6 @@
 # Aufgaben
 Sourece: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/automation-testing/UEBUNGEN.md
 
-# **Aktionen, die mit Postman möglich sind**
-
-Postman ist ein leistungsstarkes Tool, das eine Vielzahl von Aktionen zur Arbeit mit APIs bietet. Hier ist eine umfassende Liste der möglichen Aktionen:
-
 ---
 
 ## **1. API-Entwicklung**
