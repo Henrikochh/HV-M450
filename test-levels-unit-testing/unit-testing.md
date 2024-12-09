@@ -47,7 +47,7 @@ assertThrows(IllegalArgumentException.class, () -> {});
 *   **`@TestMethodOrder` & `@Order`:** Steuert die Reihenfolge der Testausführung.
 
 ## Aufgabe 3 - Banken Simulation
-Im Projekt geht es um eine bank. Man kan mehrere konten haben. Es wird zwischen PromoYouthSavingsAccount, welcher den Savings account extended und dem Salray account die beide wieder um die klasse Account extenden. Von der bank klasse kann man neue Accounts erstellen und weitere Aktionen, wie den aktuellen Kontostand abrufen. In der Booking klasse werden Transaktionen ausgefuhrert. Durch die BankUtils klasse werden dan unteranderemv die Daten der transaktion formatiert ausgegeben.  <br><br>
+Im Projekt geht es um eine Bank. Man kann mehrere Konten haben. Es wird zwischen PromoYouthSavingsAccount, welcher den Savings Account extended und dem Salray Account, die beiden wieder um die klasse Account extenden. Von der Bankklasse kann man neue Accounts erstellen und weitere Aktionen, wie den aktuellen Kontostand, abrufen. In der Booking-Klasse werden Transaktionen ausgeführt. Durch die BankUtils klasse werden dann unter anderem die Daten der Transaktion formatiert ausgegeben.  <br><br>
 ![image](https://github.com/user-attachments/assets/c5811e20-9faf-4403-994b-244d525bbca5)
 
 ## Aufgabe 4 - Unit-Tests implementieren
