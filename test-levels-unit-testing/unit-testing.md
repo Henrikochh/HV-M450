@@ -44,7 +44,6 @@ assertThrows(IllegalArgumentException.class, () -> {});
 
 *   **`@Disabled`:** Deaktiviert Tests.
 *   **`@Timeout`:** Begrenzt die Ausführungszeit.
-*   **`@ParameterizedTest`:** Führt einen Test mit verschiedenen Werten aus (`@ValueSource`, `@CsvSource`, `@MethodSource`).
 *   **`@TestMethodOrder` & `@Order`:** Steuert die Reihenfolge der Testausführung.
 
 ## Aufgabe 3 - Banken Simulation
