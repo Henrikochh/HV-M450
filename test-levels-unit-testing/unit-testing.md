@@ -1,2 +1,54 @@
 # Übungen
 Source: https://gitlab.com/ch-tbz-it/Stud/m450/m450/-/blob/main/Unterlagen/unit-testing/UEBUNGEN.md
+
+## Aufgabe 1 - Simpler Rechner
+Wird in person gezeigt.
+## Aufgabe 2 - JUnit Zusammenfassung
+**1. Testmethoden & -klassen:**
+
+*   **`@Test`:**  Kennzeichnet eine Testmethode.
+*   **Testklasse:** Enthält Testmethoden, Name endet üblicherweise auf `Test`.
+
+**Beispiel:**
+
+```java
+@Test
+void testAddition() {
+    // Testcode
+}
+```
+
+**2. Assertions:**
+
+*   **`Assertions`:** Methoden zum Überprüfen von Ergebnissen.
+*   **Wichtige Assertions:**
+    *   `assertEquals(erwartet, ergebnis)`
+    *   `assertTrue(bedingung)`
+    *   `assertThrows(exceptionTyp, code)`
+
+**Beispiel:**
+
+```java
+assertEquals(5, 2 + 3);
+assertThrows(IllegalArgumentException.class, () -> {});
+```
+
+**3. Setup & Teardown:**
+
+*   **`@BeforeEach`:**  Code, der vor *jedem* Test läuft.
+*   **`@AfterEach`:** Code, der nach *jedem* Test läuft.
+*   **`@BeforeAll`:** Code, der *einmal* vor allen Tests der Klasse läuft (statisch).
+*   **`@AfterAll`:** Code, der *einmal* nach allen Tests der Klasse läuft (statisch).
+
+**4. Weiteres:**
+
+*   **`@Disabled`:** Deaktiviert Tests.
+*   **`@Timeout`:** Begrenzt die Ausführungszeit.
+*   **`@ParameterizedTest`:** Führt einen Test mit verschiedenen Werten aus (`@ValueSource`, `@CsvSource`, `@MethodSource`).
+*   **`@TestMethodOrder` & `@Order`:** Steuert die Reihenfolge der Testausführung.
+
+## Aufgabe 3 - Banken Simulation
+Wird in person gezeigt.
+## Aufgabe 4 - Unit-Tests implementieren
+Wird in person gezeigt.
+
