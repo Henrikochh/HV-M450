@@ -1,7 +1,7 @@
 package ch.tbz.m450.controller;
 
 import ch.tbz.m450.repository.Address;
-import ch.tbz.m450.service.AddressService; // Import AddressService, not AddressServiceTest
+import ch.tbz.m450.service.AddressService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -26,7 +26,7 @@ class AddressControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private AddressService addressService; // Mock AddressService
+    private AddressService addressService;
 
     private Address address1;
     private Address address2;
@@ -37,7 +37,6 @@ class AddressControllerTest {
         address2 = createSampleAddress(2);
     }
 
-    // Helper method to create a sample Address object
     private Address createSampleAddress(int id) {
         Address address = new Address();
         address.setId(id);
